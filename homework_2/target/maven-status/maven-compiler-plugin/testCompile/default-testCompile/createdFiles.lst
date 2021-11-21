@@ -1,0 +1,16 @@
+com\calculator\junit\tests\NegativeTest.class
+com\calculator\junit\tests\SqrtTest.class
+com\calculator\junit\tests\SubtractionTest.class
+com\calculator\junit\tests\PowerTest.class
+com\calculator\junit\suites\AdditionMultiplicationSuite.class
+com\calculator\junit\tests\CtgTest.class
+com\calculator\junit\tests\PositiveTest.class
+com\calculator\junit\suites\AllSuite.class
+com\calculator\junit\parametrized\AdditionTest.class
+com\calculator\junit\tests\MultiplicationTest.class
+com\calculator\junit\tests\DivisionTest.class
+com\calculator\junit\tests\SinTest.class
+com\calculator\junit\suites\DivisionSubtractionSuite.class
+com\calculator\junit\tests\CosTest.class
+com\calculator\junit\tests\AdditionTest.class
+com\calculator\junit\tests\TgTest.class
