@@ -1,23 +1,21 @@
 package com.calculator.junit.tests;
 
-import org.junit.Assert;
-import org.junit.Test;
-import ru.levelup.qa.at.calculator.Calculator;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import org.junit.jupiter.api.Test;
 
-public class SqrtTest {
+public class SqrtTest extends BaseCalculatorTest {
 
     @Test
     public void testDoubleSuccessfully() {
         double a =144.6,b;
-        Calculator calculator=new Calculator();
         b = calculator.sqrt(a);
-        Assert.assertEquals(12.02, b, 0.1);
+        assertEquals(12.02, b, 0.1);
     }
     @Test
     public void testDoubleUnsuccessfully() {
         double a =144.6,b;
-        Calculator calculator=new Calculator();
         b = calculator.sqrt(a);
-        Assert.assertNotEquals(22.02, b, 0.1);
+        assertNotEquals(22.02, b, 0.1);
     }
 }

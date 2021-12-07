@@ -1,23 +1,23 @@
 package com.calculator.junit.tests;
 
-import org.junit.Assert;
-import org.junit.Test;
-import ru.levelup.qa.at.calculator.Calculator;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import org.junit.jupiter.api.Test;
 
-public class PositiveTest {
-    Calculator calculator=new Calculator();
+public class PositiveTest extends BaseCalculatorTest {
+
     @Test
     public void testLongSuccessfully() {
         long a =5;
         boolean c;
         c = calculator.isPositive(a);
-        Assert.assertEquals(true,c);
+        assertEquals(true,c);
     }
     @Test
     public void testLongUnsuccessfully() {
         long a =5;
         boolean c;
         c = calculator.isPositive(a);
-        Assert.assertNotEquals(false,c);
+        assertNotEquals(false,c);
     }
 }

@@ -2,10 +2,11 @@ package com.calculator.junit.suites;
 
 import com.calculator.junit.tests.AdditionTest;
 import com.calculator.junit.tests.MultiplicationTest;
-import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
+import com.calculator.junit.tests.SubtractionTest;
+import org.junit.platform.suite.api.SelectClasses;
+import org.junit.platform.suite.api.Suite;
 
-@RunWith(Suite.class)
-@Suite.SuiteClasses({AdditionTest.class})
+@Suite
+@SelectClasses({AdditionTest.class, MultiplicationTest.class})
 public class AdditionMultiplicationSuite {
 }
